@@ -1,0 +1,13 @@
+baseURL = "https://breedurbin.github.io/ProfileLinksSite/"
+locale = "en-us"
+title = "Bree Durbin"
+theme = "LucentLink-Hugo"
+
+# Only the home page is used; skip the extra pages Hugo generates by default.
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "section"]
+
+[params]
+  description = "You can find me at these places."
+
+[outputs]
+  home = ["HTML"]

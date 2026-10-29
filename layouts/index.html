@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+    {{ with .Params.backgroundImage }}
+    <style>
+        body { background-image: linear-gradient(rgba(15, 15, 30, 0.6), rgba(15, 15, 30, 0.75)), url("{{ . | relURL }}"); }
+    </style>
+    {{ end }}
+<body>
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <div class="container mx-auto px-4 py-12 max-w-md">
+        {{ partial "profile.html" . }}
+        {{ partial "link-card.html" . }}
+        {{ partial "about.html" . }}
+
+        <footer class="text-center text-xs opacity-60">
+            © {{ now.Year }} {{ .Params.name }}
+        </footer>
+    </div>
+
+    <script src="{{ "js/script.js" | relURL }}"></script>
+</body>
+</html>
