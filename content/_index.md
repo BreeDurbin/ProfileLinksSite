@@ -3,7 +3,6 @@ title: "Bree Durbin"
 profileImage: "images/profile.jpg"    # path under static/
 backgroundImage: "images/background.jpg"
 name: "Bree Durbin"
-description: "You can find me at these places."
 
 socials:
   - url: "https://www.linkedin.com/in/breedurbin/"
